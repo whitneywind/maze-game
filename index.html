@@ -19,9 +19,26 @@
             color: rgb(226, 234, 241);
             font-size: 60px;
         }
+        button {
+            border: none;
+            font-size: 2rem;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: rgb(226, 234, 241);
+            color: rgb(6, 53, 67);
+            border-radius: 5%;
+            cursor: pointer;
+            transition: ease-in-out;
+
+        }
+        button:hover {
+            background-color: rgb(229, 234, 236);
+            color: rgb(8, 34, 56);
+            transform: scale(1.1);
+        }
 
         .winner {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             position: absolute;
@@ -34,6 +51,7 @@
 <body>
     <div class="winner hidden">
         <h1>You win!</h1>
+        <button id="resetBtn">Reset</button>
     </div>
 
     <script src="index.js"></script>
